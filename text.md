@@ -4,4 +4,7 @@
 
 ####자식요소에 float 사용시 전체 박스에는 overflow:hidden을 해서 정리
 
-####modernizr ->
+####html5shiv -> ie9 미만일때 브라우저 미지원인 경고창 띄움. 지금은 사용되지 않는다
+####modernizr -> 현재 사용자가 쓰는 브라우저의 특징을 응답해줌 이용 가능한 것들을 클래스명으로 알려줌
+
+####box-shadow : x y blur-radius spread-radius / inset -> 내부에 효과를 주는 속성 / 앞뒤 위치에 쓰기 가능
