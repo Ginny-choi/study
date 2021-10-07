@@ -1,0 +1,285 @@
+body {
+  background-color: #ffff;
+  margin: 0;
+}
+
+#wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  #wrap {
+    width: 100%;
+  }
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: #e89f8f;
+}
+
+.aside {
+  width: 100%;
+  height: 200px;
+  background-color: #e8db8f;
+}
+
+.section.section1 {
+  width: 30%;
+  height: 300px;
+  float: left;
+  background-color: #bee88f;
+}
+
+@media (max-width: 480px) {
+  .section.section1 {
+    width: 100%;
+    float: none;
+    height: 90px;
+  }
+}
+
+.section.section2, .section.section3 {
+  width: 70%;
+  height: 150px;
+  float: right;
+  background-color: #8fe8e6;
+}
+
+@media (max-width: 480px) {
+  .section.section2, .section.section3 {
+    width: 100%;
+    float: none;
+    height: 90px;
+  }
+}
+
+.section.section3 {
+  background-color: #8fe8b9;
+}
+
+.section.section4 {
+  clear: both;
+  width: 90%;
+  padding: 5%;
+  overflow: hidden;
+  background-color: #e8cc8f;
+}
+
+.section.section4 .box {
+  width: 23%;
+  height: 170px;
+  float: left;
+  margin: 1%;
+  border-radius: 5px;
+  background-color: #e1ddf1;
+}
+
+@media (max-width: 1200px) {
+  .section.section4 .box {
+    width: 31.3333%;
+  }
+  .section.section4 .box:nth-child(4) {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .section.section4 .box {
+    width: 95%;
+    margin: 2.5%;
+    float: none;
+    height: 90px;
+  }
+}
+
+.article {
+  width: 33.333%;
+  height: 150px;
+  float: left;
+}
+
+.article.article1 {
+  background-color: #9f8fe8;
+}
+
+.article.article2 {
+  background-color: #cb8fe8;
+}
+
+.article.article3 {
+  background-color: #e88fac;
+}
+
+@media (max-width: 1200px) {
+  .article {
+    width: 50%;
+  }
+  .article.article3 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .article {
+    clear: both;
+    float: none;
+    width: 100%;
+    height: 75px;
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 70px;
+  background-color: #a6a4af;
+}
+
+#wrap2 {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1240px) {
+  #wrap2 {
+    width: 100%;
+  }
+}
+
+#header {
+  width: 100%;
+  height: 100px;
+  background-color: #9ce0ea;
+}
+
+#banner {
+  width: 100%;
+  height: 400px;
+  background-color: #48c1d3;
+}
+
+#content1 {
+  overflow: hidden;
+}
+
+#content1 .nav {
+  width: 30%;
+  float: left;
+  height: 500px;
+  background-color: #6884b4;
+}
+
+#content1 .article_right1,
+#content1 .article_right2 {
+  width: 70%;
+  float: left;
+  height: 250px;
+}
+
+#content1 .article_right1 {
+  background-color: #487bd3;
+}
+
+#content1 .article_right2 {
+  background-color: #5a48d3;
+}
+
+@media (max-width: 480px) {
+  #content1 .nav {
+    width: 100%;
+    height: 200px;
+  }
+  #content1 .article_right1,
+  #content1 .article_right2 {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+#content2 {
+  overflow: hidden;
+}
+
+#content2 .article_box1,
+#content2 .article_box2,
+#content2 .article_box3 {
+  float: left;
+  width: 33.3333%;
+  height: 300px;
+}
+
+#content2 .article_box1 {
+  background-color: #c9c;
+}
+
+#content2 .article_box2 {
+  background-color: #9cc;
+}
+
+#content2 .article_box3 {
+  background-color: #cc9;
+}
+
+@media (max-width: 1240px) {
+  #content2 .article_box1,
+  #content2 .article_box2 {
+    width: 50%;
+  }
+  #content2 .article_box3 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #content2 .article_box1,
+  #content2 .article_box2 {
+    width: 100%;
+  }
+}
+
+#content3 {
+  overflow: hidden;
+  width: 90%;
+  padding: 5%;
+  background-color: #e5ce55;
+}
+
+#content3 .article_square1,
+#content3 .article_square2,
+#content3 .article_square3,
+#content3 .article_square4 {
+  float: left;
+  width: 23%;
+  margin: 1%;
+  border-radius: 5px;
+  height: 200px;
+  background-color: #fff;
+}
+
+@media (max-width: 1240px) {
+  #content3 .article_square1,
+  #content3 .article_square2,
+  #content3 .article_square3 {
+    width: 31.3333%;
+  }
+  #content3 .article_square4 {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  #content3 .article_square1,
+  #content3 .article_square2,
+  #content3 .article_square3 {
+    width: 98%;
+  }
+}
+
+#footer {
+  width: 100%;
+  height: 100px;
+  background-color: #cdccc7;
+}
+/*# sourceMappingURL=style.min.css.map */
