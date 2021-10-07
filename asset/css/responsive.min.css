@@ -1,31 +1,30 @@
-#header {
-  background: url(/asset/img/header_bg.jpg) repeat-x center top;
-}
-
-#header .container {
+.container {
   width: 1200px;
   margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 1220px) {
-  #header .container {
+  .container {
     width: 100%;
   }
-  #header .container .row {
+  .container .row {
     padding: 0 15px;
   }
 }
 
-#header .container .header {
+#header {
+  background: url(/asset/img/header_bg.jpg) repeat-x center top;
+}
+
+#header .header {
   height: 327px;
 }
 
-#header .container .header .header_manu {
+#header .header .header_manu {
   text-align: right;
 }
 
-#header .container .header .header_manu a {
+#header .header .header_manu a {
   color: #fff;
   padding: 8px 0 6px 10px;
   display: inline-block;
@@ -34,18 +33,18 @@
   font-family: "Abel", sans-serif;
 }
 
-#header .container .header .header_manu a:hover {
+#header .header .header_manu a:hover {
   color: #ccc;
 }
 
-#header .container .header .header_tit {
+#header .header .header_tit {
   text-align: center;
   text-transform: uppercase;
   margin-top: 55px;
   font-family: "Abel", sans-serif;
 }
 
-#header .container .header .header_tit h1 {
+#header .header .header_tit h1 {
   font-size: 30px;
   color: #fff;
   background: #51b0dc;
@@ -59,12 +58,12 @@
   transition: box-shadow 0.25s ease-in-out, -webkit-box-shadow 0.25s ease-in-out;
 }
 
-#header .container .header .header_tit h1:hover {
+#header .header .header_tit h1:hover {
   -webkit-box-shadow: inset -9em 0 0 0 #257fac, inset 9em 0 0 0 #257fac;
           box-shadow: inset -9em 0 0 0 #257fac, inset 9em 0 0 0 #257fac;
 }
 
-#header .container .header .header_tit a {
+#header .header .header_tit a {
   font-size: 16px;
   color: #fff;
   background: #4a9abf;
@@ -77,23 +76,23 @@
   transition: box-shadow 0.25s ease-in-out, -webkit-box-shadow 0.25s ease-in-out;
 }
 
-#header .container .header .header_tit a:hover {
+#header .header .header_tit a:hover {
   -webkit-box-shadow: 0 0 0 5px rgba(75, 154, 191, 0.9) inset, 0 0 0 100px rgba(0, 0, 0, 0.1) inset;
           box-shadow: 0 0 0 5px rgba(75, 154, 191, 0.9) inset, 0 0 0 100px rgba(0, 0, 0, 0.1) inset;
 }
 
-#header .container .header .header_icon {
+#header .header .header_icon {
   text-align: center;
   margin-top: 40px;
   padding-bottom: 45px;
 }
 
-#header .container .header .header_icon li {
+#header .header .header_icon li {
   display: inline;
   margin: 0 2px;
 }
 
-#header .container .header .header_icon li a {
+#header .header .header_icon li a {
   display: inline-block;
   background-color: #3192bf;
   color: #fff;
@@ -107,17 +106,17 @@
   transition: all 0.3s ease;
 }
 
-#header .container .header .header_icon li a:hover {
+#header .header .header_icon li a:hover {
   -webkit-box-shadow: 0 0 0 3px rgba(75, 154, 191, 0.9) inset, 0 0 0 100px rgba(0, 0, 0, 0.1) inset;
           box-shadow: 0 0 0 3px rgba(75, 154, 191, 0.9) inset, 0 0 0 100px rgba(0, 0, 0, 0.1) inset;
 }
 
-#header .container .header .header_icon li a:hover span {
+#header .header .header_icon li a:hover span {
   opacity: 1;
   top: -33px;
 }
 
-#header .container .header .header_icon li a span {
+#header .header .header_icon li a span {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -133,7 +132,7 @@
   transition: all 0.3s ease;
 }
 
-#header .container .header .header_icon li a span:before {
+#header .header .header_icon li a span:before {
   content: "";
   position: absolute;
   left: 50%;
@@ -142,5 +141,58 @@
   border-top: 5px solid #3192bf;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
+}
+
+#nav {
+  background-color: #f6fdff;
+}
+
+#nav .nav {
+  overflow: hidden;
+  padding: 25px 0;
+}
+
+#nav .nav div {
+  float: left;
+  width: 40%;
+}
+
+#nav .nav div:last-child {
+  width: 20%;
+}
+
+#nav .nav div:last-child li {
+  width: 100%;
+}
+
+#nav .nav div ol {
+  overflow: hidden;
+}
+
+#nav .nav div li {
+  float: left;
+  width: 50%;
+  position: relative;
+  padding-left: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#nav .nav div li:before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  background-color: #25a2d0;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+
+#nav .nav div h3 {
+  font-size: 18px;
+  color: #25a2d0;
+  font-weight: bold;
+  margin-bottom: 4px;
 }
 /*# sourceMappingURL=responsive.min.css.map */
