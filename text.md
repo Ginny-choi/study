@@ -8,3 +8,6 @@
 ####modernizr -> 현재 사용자가 쓰는 브라우저의 특징을 응답해줌 이용 가능한 것들을 클래스명으로 알려줌
 
 ####box-shadow : x y blur-radius spread-radius / inset -> 내부에 효과를 주는 속성 / 앞뒤 위치에 쓰기 가능
+####border-radius -> 동일하게 4면을 다 처리하는 스타일에만 익숙했는데, border-radius: 5px 0; top-left&bottom-right 에만 효과를 주는 디자인을 알게됨
+
+#### < : `&lt;` ||| > : `&gt;` -> 기호는 코드로 처리

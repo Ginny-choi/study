@@ -167,6 +167,28 @@
 					left: 0;
 					top: 6px;
 				}
+
+				&:hover {
+					a::after {
+						width: 100%;
+					}
+				}
+
+				a {
+					position: relative;
+
+					&::after {
+						content: "";
+						display: inline-block;
+						width: 0;
+						height: 1px;
+						background: #25aad0;
+						transition: all 0.2s ease-out;
+						position: absolute;
+						bottom: 0;
+						left: 0;
+					}
+				}
 			}
 
 			h3 {
@@ -174,6 +196,37 @@
 				color: #25a2d0;
 				font-weight: bold;
 				margin-bottom: 4px;
+			}
+		}
+	}
+}
+
+#title {
+	background-color: #eaf7fd;
+	.title {
+		text-align: center;
+		position: relative;
+		h2 {
+			font-family: "Nanum Pen Script", cursive;
+			font-size: 39px;
+			padding: 5px 0;
+			color: #51b0dc;
+		}
+		.btn {
+			position: absolute;
+			right: 0;
+			top: 5px;
+			width: 60px;
+			height: 60px;
+			line-height: 60px;
+			background: #f6e4f8;
+			border-radius: 50%;
+			color: #777;
+			transition: all 0.3s ease;
+			font-size: 35px;
+
+			&:hover {
+				box-shadow: 0 0 0 5px rgba(#f6e4f8, 0.9) inset, 0 0 0 100px rgba(#000, 0.1) inset;
 			}
 		}
 	}

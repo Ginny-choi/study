@@ -189,10 +189,67 @@
   top: 6px;
 }
 
+#nav .nav div li:hover a::after {
+  width: 100%;
+}
+
+#nav .nav div li a {
+  position: relative;
+}
+
+#nav .nav div li a::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 1px;
+  background: #25aad0;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 #nav .nav div h3 {
   font-size: 18px;
   color: #25a2d0;
   font-weight: bold;
   margin-bottom: 4px;
+}
+
+#title {
+  background-color: #eaf7fd;
+}
+
+#title .title {
+  text-align: center;
+  position: relative;
+}
+
+#title .title h2 {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 39px;
+  padding: 5px 0;
+  color: #51b0dc;
+}
+
+#title .title .btn {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: #f6e4f8;
+  border-radius: 50%;
+  color: #777;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: 35px;
+}
+
+#title .title .btn:hover {
+  -webkit-box-shadow: 0 0 0 5px rgba(246, 228, 248, 0.9) inset, 0 0 0 100px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 0 0 0 5px rgba(246, 228, 248, 0.9) inset, 0 0 0 100px rgba(0, 0, 0, 0.1) inset;
 }
 /*# sourceMappingURL=responsive.min.css.map */
