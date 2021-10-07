@@ -17,7 +17,7 @@
 	.header {
 		height: 327px;
 
-		.header_manu {
+		.header_menu {
 			text-align: right;
 
 			a {
@@ -50,7 +50,7 @@
 				transition: box-shadow 0.25s ease-in-out;
 
 				&:hover {
-					box-shadow: inset -9em 0 0 0 #257fac, inset 9em 0 0 0 #257fac;
+					box-shadow: -9em 0 0 0 #257fac inset, 9em 0 0 0 #257fac inset;
 				}
 			}
 
@@ -64,7 +64,7 @@
 				transition: box-shadow 0.25s ease-in-out;
 
 				&:hover {
-					box-shadow: 0 0 0 5px rgba(75, 154, 191, 0.9) inset, 0 0 0 100px rgba(#000, 0.1) inset;
+					box-shadow: 0 0 0 5px rgba(#4b9abfe6, 0.9) inset, 0 0 0 100px rgba(#000, 0.1) inset;
 				}
 			}
 		}
@@ -91,7 +91,7 @@
 					transition: all 0.3s ease;
 
 					&:hover {
-						box-shadow: 0 0 0 3px rgba(75, 154, 191, 0.9) inset, 0 0 0 100px rgba(#000, 0.1) inset;
+						box-shadow: 0 0 0 3px rgba(#4b9abfe6, 0.9) inset, 0 0 0 100px rgba(#000, 0.1) inset;
 
 						span {
 							opacity: 1;

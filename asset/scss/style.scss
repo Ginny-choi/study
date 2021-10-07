@@ -1,5 +1,5 @@
 body {
-	background-color: #ffff;
+	background-color: #fff;
 	margin: 0;
 }
 
@@ -187,20 +187,17 @@ body {
 	}
 	.article_box3 {
 		background-color: #cc9;
-	}
-
-	@media (max-width: 1240px) {
-		.article_box1,
-		.article_box2 {
-			width: 50%;
-		}
-		.article_box3 {
+		@media (max-width: 1240px) {
 			display: none;
 		}
 	}
-	@media (max-width: 768px) {
-		.article_box1,
-		.article_box2 {
+
+	.article_box1,
+	.article_box2 {
+		@media (max-width: 1240px) {
+			width: 50%;
+		}
+		@media (max-width: 768px) {
 			width: 100%;
 		}
 	}
@@ -220,7 +217,7 @@ body {
 		margin: 1%;
 		border-radius: 5px;
 		height: 200px;
-		background-color: #fff;
+		background-color: rgb(255, 255, 255);
 	}
 
 	@media (max-width: 1240px) {
