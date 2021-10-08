@@ -409,8 +409,87 @@ body {
   line-height: 18px;
 }
 
+#contents .column .menu li {
+  position: relative;
+}
+
+#contents .column .menu li a {
+  color: #878787;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #dbdbdb;
+  display: block;
+  padding: 10px;
+  -webkit-transition: background 0.34s ease, -webkit-box-shadow 0.34s ease;
+  transition: background 0.34s ease, -webkit-box-shadow 0.34s ease;
+  transition: box-shadow 0.34s ease, background 0.34s ease;
+  transition: box-shadow 0.34s ease, background 0.34s ease, -webkit-box-shadow 0.34s ease;
+}
+
+#contents .column .menu li a:hover {
+  -webkit-box-shadow: 180px 0 0 0 rgba(36, 130, 174, 0.7) inset;
+          box-shadow: 180px 0 0 0 rgba(36, 130, 174, 0.7) inset;
+  color: #fff;
+  background: rgba(36, 130, 174, 0.9);
+}
+
+#contents .column .menu li a i {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+@media (max-width: 600px) {
+  #contents .column.col1 {
+    padding: 0;
+    border-bottom: 0;
+  }
+  #contents .column.col1 .col_tit,
+  #contents .column.col1 .col_desc {
+    display: none;
+  }
+  #contents .column.col1 .menu ul {
+    overflow: hidden;
+  }
+  #contents .column.col1 .menu ul li {
+    float: left;
+    width: 33.333%;
+    text-align: center;
+    border-right: 1px solid #dbdbdb;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  #contents .column.col1 .menu ul li:nth-child(3n) {
+    border: 0;
+  }
+  #contents .column.col1 .menu ul li a {
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  }
+  #contents .column.col1 .menu ul li a:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background: rgba(36, 130, 174, 0.3);
+  }
+  #contents .column.col1 .menu ul li a i {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  #contents .column.col2 {
+    background: #fff;
+  }
+}
+
 #contents .column.col3 {
   border-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  #contents .column.col4 {
+    border-top: 1px solid #dbdbdb;
+  }
 }
 
 #contents .column.col6 {
