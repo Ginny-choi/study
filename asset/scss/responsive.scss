@@ -10,12 +10,18 @@
 		}
 	}
 }
-
-#header {
+body {
 	background: url(/asset/img/header_bg.jpg) repeat-x center top;
+}
+#header {
+	// background: url(/asset/img/header_bg.jpg) repeat-x center top;
 
 	.header {
 		height: 327px;
+
+		@media (max-width: 600px) {
+			height: auto;
+		}
 
 		.header_menu {
 			text-align: right;
@@ -38,6 +44,10 @@
 			text-transform: uppercase;
 			margin-top: 55px;
 			font-family: "Abel", sans-serif;
+
+			@media (max-width: 600px) {
+				display: none;
+			}
 
 			h1 {
 				font-size: 30px;
@@ -73,6 +83,10 @@
 			text-align: center;
 			margin-top: 40px;
 			padding-bottom: 45px;
+
+			@media (max-width: 600px) {
+				display: none;
+			}
 
 			li {
 				display: inline;
@@ -134,9 +148,16 @@
 	.nav {
 		overflow: hidden;
 		padding: 25px 0;
+		display: none;
+
 		div {
 			float: left;
 			width: 40%;
+
+			@media (max-width: 960px) {
+				float: none;
+				width: 100%;
+			}
 
 			&:last-child {
 				width: 20%;
@@ -144,10 +165,28 @@
 				li {
 					width: 100%;
 				}
+
+				@media (max-width: 960px) {
+					width: 100%;
+
+					li {
+						width: 33.3333%;
+						@media (max-width: 600px) {
+							width: 50%;
+						}
+						@media (max-width: 320px) {
+							width: 100%;
+						}
+					}
+				}
 			}
 
 			ol {
 				overflow: hidden;
+
+				@media (max-width: 960px) {
+					margin-bottom: 10px;
+				}
 			}
 
 			li {
@@ -156,6 +195,16 @@
 				position: relative;
 				padding-left: 8px;
 				box-sizing: border-box;
+
+				@media (max-width: 960px) {
+					width: 33.3333%;
+				}
+				@media (max-width: 600px) {
+					width: 50%;
+				}
+				@media (max-width: 320px) {
+					width: 100%;
+				}
 
 				&:before {
 					content: "";
@@ -225,9 +274,28 @@
 			transition: all 0.3s ease;
 			font-size: 35px;
 
+			@media (max-width: 600px) {
+				display: none;
+			}
+
 			&:hover {
 				box-shadow: 0 0 0 5px rgba(#f6e4f8, 0.9) inset, 0 0 0 100px rgba(#000, 0.1) inset;
 			}
 		}
 	}
+}
+// web
+@media (max-width: 1220px) {
+}
+@media (max-width: 1024px) {
+}
+// table
+@media (max-width: 960px) {
+}
+@media (max-width: 768px) {
+}
+// mobile
+@media (max-width: 600px) {
+}
+@media (max-width: 320px) {
 }

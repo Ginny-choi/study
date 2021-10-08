@@ -12,12 +12,18 @@
   }
 }
 
-#header {
+body {
   background: url(/asset/img/header_bg.jpg) repeat-x center top;
 }
 
 #header .header {
   height: 327px;
+}
+
+@media (max-width: 600px) {
+  #header .header {
+    height: auto;
+  }
 }
 
 #header .header .header_menu {
@@ -42,6 +48,12 @@
   text-transform: uppercase;
   margin-top: 55px;
   font-family: "Abel", sans-serif;
+}
+
+@media (max-width: 600px) {
+  #header .header .header_tit {
+    display: none;
+  }
 }
 
 #header .header .header_tit h1 {
@@ -85,6 +97,12 @@
   text-align: center;
   margin-top: 40px;
   padding-bottom: 45px;
+}
+
+@media (max-width: 600px) {
+  #header .header .header_icon {
+    display: none;
+  }
 }
 
 #header .header .header_icon li {
@@ -150,11 +168,19 @@
 #nav .nav {
   overflow: hidden;
   padding: 25px 0;
+  display: none;
 }
 
 #nav .nav div {
   float: left;
   width: 40%;
+}
+
+@media (max-width: 960px) {
+  #nav .nav div {
+    float: none;
+    width: 100%;
+  }
 }
 
 #nav .nav div:last-child {
@@ -165,8 +191,35 @@
   width: 100%;
 }
 
+@media (max-width: 960px) {
+  #nav .nav div:last-child {
+    width: 100%;
+  }
+  #nav .nav div:last-child li {
+    width: 33.3333%;
+  }
+}
+
+@media (max-width: 960px) and (max-width: 600px) {
+  #nav .nav div:last-child li {
+    width: 50%;
+  }
+}
+
+@media (max-width: 960px) and (max-width: 320px) {
+  #nav .nav div:last-child li {
+    width: 100%;
+  }
+}
+
 #nav .nav div ol {
   overflow: hidden;
+}
+
+@media (max-width: 960px) {
+  #nav .nav div ol {
+    margin-bottom: 10px;
+  }
 }
 
 #nav .nav div li {
@@ -176,6 +229,24 @@
   padding-left: 8px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@media (max-width: 960px) {
+  #nav .nav div li {
+    width: 33.3333%;
+  }
+}
+
+@media (max-width: 600px) {
+  #nav .nav div li {
+    width: 50%;
+  }
+}
+
+@media (max-width: 320px) {
+  #nav .nav div li {
+    width: 100%;
+  }
 }
 
 #nav .nav div li:before {
@@ -246,6 +317,12 @@
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   font-size: 35px;
+}
+
+@media (max-width: 600px) {
+  #title .title .btn {
+    display: none;
+  }
 }
 
 #title .title .btn:hover {
