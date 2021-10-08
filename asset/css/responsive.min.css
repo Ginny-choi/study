@@ -611,11 +611,146 @@ body {
   }
 }
 
-#contents .column.col6 {
+#contents .column.col4 .slider figure {
+  position: relative;
+}
+
+#contents .column.col4 .slider figure figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  #contents .column.col4 .slider figure figcaption {
+    padding: 10px;
+  }
+}
+
+#contents .column.col4 .slider figure figcaption em {
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Abel", sans-serif;
+  opacity: 0;
+  -webkit-transition: all 0.84s ease;
+  transition: all 0.84s ease;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+}
+
+@media (max-width: 600px) {
+  #contents .column.col4 .slider figure figcaption em {
+    font-size: 18px;
+  }
+}
+
+#contents .column.col4 .slider figure figcaption span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  opacity: 0;
+  -webkit-transition: all 0.84s 0.2s ease;
+  transition: all 0.84s 0.2s ease;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+}
+
+@media (max-width: 600px) {
+  #contents .column.col4 .slider figure figcaption span {
+    font-size: 14px;
+  }
+}
+
+#contents .column.col4 .slider .slick-active figcaption em,
+#contents .column.col4 .slider .slick-active figcaption span {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+#contents .column.col4 .slider .slick-dots {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+#contents .column.col4 .slider .slick-dots li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+}
+
+#contents .column.col4 .slider .slick-dots li.slick-active button {
+  background: #2b91c8;
+}
+
+#contents .column.col4 .slider .slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  background: #5dbfeb;
+  border-radius: 50%;
+}
+
+#contents .column.col4 .slider .slick-prev {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-indent: -9999px;
+  font: normal normal normal 14px/1 FontAwesome;
+}
+
+#contents .column.col4 .slider .slick-prev:before {
+  content: "\f053";
+  color: #5dbfeb;
+  text-indent: 0;
+  position: absolute;
+  left: 9px;
+  top: 8px;
+}
+
+#contents .column.col4 .slider .slick-next {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-indent: -9999px;
+  font: normal normal normal 14px/1 FontAwesome;
+}
+
+#contents .column.col4 .slider .slick-next::before {
+  content: "\f054";
+  color: #5dbfeb;
+  text-indent: 0;
+  position: absolute;
+  left: 9px;
+  top: 8px;
+}
+
+#contents.col6 {
   border-bottom: 0;
 }
 
-#contents .column.col9 {
+#contents.col9 {
   border-bottom: 0;
 }
 
