@@ -34,3 +34,8 @@
 -   배경이미지로 해서 미디어 비율에 따라 이미지를 불러오는 방법
 
 ###### 📌 figcaption : figure 태그 사용시 추가 설명을 위한 태그
+
+###### 📌 css filter : 포토샵에서 사용되는 그래픽 효과를 설정 가능하다.
+
+-   blur(px), brightness(%):밝고 어두움, contrast(%):이미지 대비, drop-shadow(), grayscale(%), hue-rotate(deg):이미지 색조
+-   saturate(%):이미지 채도, sepia(%), invert(%):이미지 반전, opacity(%)

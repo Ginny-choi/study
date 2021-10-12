@@ -29,6 +29,7 @@
 		<link rel="stylesheet" href="/asset/css/reset.css" />
 		<link rel="stylesheet" href="/asset/css/font-awesome.css" />
 		<link rel="stylesheet" href="/asset/css/slick.css" />
+		<link rel="stylesheet" href="/asset/css/lightgallery.css" />
 		<link rel="stylesheet" href="/asset/css/responsive.min.css" />
 
 		<!-- HTLM5shiv ie6~8 -->
@@ -268,10 +269,22 @@
 							<!-- col4 -->
 						</article>
 						<article class="column col5">
-							<h4 class="col_tit">Title</h4>
-							<p class="col_desc">이 곳은 설명 부분입니다.</p>
-							<!---->
-							<!--//-->
+							<h4 class="col_tit">Blend Effect</h4>
+							<p class="col_desc">Background-blend-mode와 mix-blend-mode</p>
+							<!--light box-->
+							<div class="lightbox square clearfix">
+								<a href="/asset/img/light01_s.jpg"><img src="/asset/img/light01.jpg" alt="이미지" /><em>blur</em></a>
+								<a href="/asset/img/light02_s.jpg"><img src="/asset/img/light02.jpg" alt="이미지" /><em>brightness</em></a>
+								<a href="/asset/img/light03_s.jpg"> <img src="/asset/img/light03.jpg" alt="이미지" /><em>contrast</em></a>
+								<a href="/asset/img/light04_s.jpg"> <img src="/asset/img/light04.jpg" alt="이미지" /><em>grayscale</em></a>
+								<a href="/asset/img/light05_s.jpg"> <img src="/asset/img/light05.jpg" alt="이미지" /><em>hur-rotate</em></a>
+								<a href="/asset/img/light06_s.jpg"> <img src="/asset/img/light06.jpg" alt="이미지" /><em>invert</em></a>
+								<a href="/asset/img/light07_s.jpg"> <img src="/asset/img/light07.jpg" alt="이미지" /><em>opacity</em></a>
+								<a href="/asset/img/light08_s.jpg"> <img src="/asset/img/light08.jpg" alt="이미지" /><em>saturate</em></a>
+								<a href="/asset/img/light09_s.jpg"> <img src="/asset/img/light09.jpg" alt="이미지" /><em>sepia</em></a>
+								<a href="/asset/img/light10_s.jpg"> <img src="/asset/img/light10.jpg" alt="이미지" /><em>Mix</em></a>
+							</div>
+							<!--//light box-->
 						</article>
 						<!-- col5 -->
 						<article class="column col6">
@@ -317,11 +330,16 @@
 		</footer>
 		<!-- footer -->
 
-		<script src="/asset/js/modernizr-custom.js"></script>
 		<script src="/asset/js/jquery.min_1.12.4.js"></script>
+		<script src="/asset/js/modernizr-custom.js"></script>
+		<script src="/asset/js/lightgallery.min.js"></script>
 		<script src="/asset/js/slick.min.js"></script>
 
 		<script>
+			//라이트 박스
+			$(".lightbox").lightGallery({});
+
+			//이미지 슬라이더
 			$(".slider").slick({
 				dots: true,
 				autoplay: true,
