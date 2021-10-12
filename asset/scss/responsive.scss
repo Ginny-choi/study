@@ -784,6 +784,17 @@ body {
 		}
 		&.col6 {
 			border-bottom: 0;
+
+			.video-box {
+				width: 100%;
+				position: relative;
+				padding-bottom: 56.25%;
+				iframe {
+					position: absolute;
+					height: 100%;
+					width: 100%;
+				}
+			}
 		}
 		&.col7 {
 		}

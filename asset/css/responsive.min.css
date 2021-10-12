@@ -873,6 +873,18 @@ body {
   border-bottom: 0;
 }
 
+#contents .column.col6 .video-box {
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+#contents .column.col6 .video-box iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
 #contents .column.col9 {
   border-bottom: 0;
 }
