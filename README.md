@@ -33,9 +33,25 @@
 -   srcset 을 사용하면 브라우저는 적합한 이미지를 선택해서 가져온다. html 5.1부터 img tag에 속성 추가됨
 -   배경이미지로 해서 미디어 비율에 따라 이미지를 불러오는 방법
 
-###### 📌 figcaption : figure 태그 사용시 추가 설명을 위한 태그
+###### 📌 <figure> : 독립적인 콘텐츠 표현, img 태그를 묶을 때 자주 사용한다. <figcaption>요소를 사용해 추가 설명을 붙인다
+
+---
+
+10/12
 
 ###### 📌 css filter : 포토샵에서 사용되는 그래픽 효과를 설정 가능하다.
 
 -   blur(px), brightness(%):밝고 어두움, contrast(%):이미지 대비, drop-shadow(), grayscale(%), hue-rotate(deg):이미지 색조
 -   saturate(%):이미지 채도, sepia(%), invert(%):이미지 반전, opacity(%)
+
+###### 📌 iframe 영역을 잡기 위해서 가상으로 패딩을 % 값으로 설정해서 영역을 잡아주었다. 정상적인 방법은 아니라고함.css로 하는 편리한 방법..
+
+###### 📌 icon을 넣는 방법 중 가상요소를 만들어서 넣는 방법이 있다.
+
+-   가상요소 콘텐츠에 "역슬러시+ 해당 아이콘의 유니코드"를 입력한다
+-   font-weight를 추가로 입력해줘야 한다. 아이콘의 스타일에 따라서 값을 넣어줘야함
+    --- solid : 900 // regular,brands : 400 // light : 300
+-   font-family 도 버전에 따라 입력해줘야함. 해당 버전은 FontAwesome;
+-   정확이 입력하지 않으면 □ 으로만 표시된다.
+
+###### 📌 section 혹은 article엔 h 태그가 들어가야한다
