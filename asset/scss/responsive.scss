@@ -1,9 +1,12 @@
+// @import 'vars';
+@use "vars" as var;
+
 .container {
 	width: 1200px;
 	margin: 0 auto;
 	position: relative;
 
-	@media (max-width: 1220px) {
+	@media (max-width: var.$breakpointWeb1) {
 		width: 100%;
 
 		.row {
@@ -20,7 +23,7 @@ body {
 	.header {
 		height: 327px;
 
-		@media (max-width: 600px) {
+		@media (max-width: var.$breakpointMobile1) {
 			height: auto;
 		}
 
@@ -46,7 +49,7 @@ body {
 			margin-top: 55px;
 			font-family: "Abel", sans-serif;
 
-			@media (max-width: 600px) {
+			@media (max-width: var.$breakpointMobile1) {
 				display: none;
 			}
 
@@ -85,7 +88,7 @@ body {
 			margin-top: 40px;
 			padding-bottom: 45px;
 
-			@media (max-width: 600px) {
+			@media (max-width: var.$breakpointMobile1) {
 				display: none;
 			}
 
@@ -155,7 +158,7 @@ body {
 			float: left;
 			width: 40%;
 
-			@media (max-width: 960px) {
+			@media (max-width: var.$breakpointTablet1) {
 				float: none;
 				width: 100%;
 			}
@@ -167,15 +170,15 @@ body {
 					width: 100%;
 				}
 
-				@media (max-width: 960px) {
+				@media (max-width: var.$breakpointTablet1) {
 					width: 100%;
 
 					li {
 						width: 33.3333%;
-						@media (max-width: 600px) {
+						@media (max-width: var.$breakpointMobile1) {
 							width: 50%;
 						}
-						@media (max-width: 320px) {
+						@media (max-width: var.$breakpointMobile2) {
 							width: 100%;
 						}
 					}
@@ -185,7 +188,7 @@ body {
 			ol {
 				overflow: hidden;
 
-				@media (max-width: 960px) {
+				@media (max-width: var.$breakpointTablet1) {
 					margin-bottom: 10px;
 				}
 			}
@@ -197,13 +200,13 @@ body {
 				padding-left: 8px;
 				box-sizing: border-box;
 
-				@media (max-width: 960px) {
+				@media (max-width: var.$breakpointTablet1) {
 					width: 33.3333%;
 				}
-				@media (max-width: 600px) {
+				@media (max-width: var.$breakpointMobile1) {
 					width: 50%;
 				}
-				@media (max-width: 320px) {
+				@media (max-width: var.$breakpointMobile2) {
 					width: 100%;
 				}
 
@@ -275,7 +278,7 @@ body {
 			transition: all 0.3s ease;
 			font-size: 35px;
 
-			@media (max-width: 600px) {
+			@media (max-width: var.$breakpointMobile1) {
 				display: none;
 			}
 
@@ -294,7 +297,7 @@ body {
 	.container {
 		border-right: 1px solid #dbdbdb;
 		border-left: 1px solid #dbdbdb;
-		@media (max-width: 1220px) {
+		@media (max-width: var.$breakpointWeb1) {
 			border: 0;
 		}
 	}
@@ -302,7 +305,7 @@ body {
 		float: left;
 		width: 250px;
 
-		@media (max-width: 768px) {
+		@media (max-width: var.$breakpointTablet2) {
 			float: none;
 			width: 100%;
 		}
@@ -315,11 +318,11 @@ body {
 		border-right: 1px solid #dbdbdb;
 		border-left: 1px solid #dbdbdb;
 
-		@media (max-width: 960px) {
+		@media (max-width: var.$breakpointTablet1) {
 			margin-right: 0;
 			border-right: 0;
 		}
-		@media (max-width: 768px) {
+		@media (max-width: var.$breakpointTablet2) {
 			border-left: 0;
 		}
 	}
@@ -486,7 +489,7 @@ body {
 			}
 		}
 
-		@media (max-width: 960px) {
+		@media (max-width: var.$breakpointTablet1) {
 			position: static;
 			width: 100%;
 			border-top: 1px solid #dbdbdb;
@@ -510,7 +513,7 @@ body {
 				}
 			}
 		}
-		@media (max-width: 600px) {
+		@media (max-width: var.$breakpointMobile1) {
 			.column {
 				width: 50%;
 
@@ -519,7 +522,7 @@ body {
 				}
 			}
 		}
-		@media (max-width: 320px) {
+		@media (max-width: var.$breakpointMobile2) {
 			.column {
 				width: 100%;
 				padding: 3%;
@@ -576,7 +579,7 @@ body {
 				}
 			}
 
-			@media (max-width: 600px) {
+			@media (max-width: var.$breakpointMobile1) {
 				padding: 0;
 				border-bottom: 0;
 
@@ -686,7 +689,7 @@ body {
 				font-size: 10px;
 			}
 
-			@media (max-width: 600px) {
+			@media (max-width: var.$breakpointMobile1) {
 				background: #fff;
 			}
 		}
@@ -737,7 +740,7 @@ body {
 			}
 		}
 		&.col4 {
-			@media (max-width: 600px) {
+			@media (max-width: var.$breakpointMobile1) {
 				border-top: 1px solid #dbdbdb;
 			}
 
@@ -755,7 +758,7 @@ body {
 						color: #fff;
 						font-size: 18px;
 
-						@media (max-width: 600px) {
+						@media (max-width: var.$breakpointMobile1) {
 							padding: 10px;
 						}
 
@@ -769,7 +772,7 @@ body {
 							transition: all 0.84s ease;
 							transform: translateX(50px);
 
-							@media (max-width: 600px) {
+							@media (max-width: var.$breakpointMobile1) {
 								font-size: 18px;
 							}
 						}
@@ -783,7 +786,7 @@ body {
 							transition: all 0.84s 0.2s ease;
 							transform: translateX(50px);
 
-							@media (max-width: 600px) {
+							@media (max-width: var.$breakpointMobile1) {
 								font-size: 14px;
 							}
 						}
@@ -880,25 +883,25 @@ body {
 					position: relative;
 					overflow: hidden;
 
-					@media (max-width: 1220px) {
+					@media (max-width: var.$breakpointWeb1) {
 						width: 24%;
 						&:nth-child(5n) {
 							display: none;
 						}
 					}
-					@media (max-width: 1024px) {
+					@media (max-width: var.$breakpointWeb2) {
 						width: 32.3333%;
 						&:nth-child(5) {
 							display: block;
 						}
 					}
-					@media (max-width: 600px) {
+					@media (max-width: var.$breakpointMobile1) {
 						width: 49%;
 						&:nth-child(5) {
 							display: none;
 						}
 					}
-					@media (max-width: 320px) {
+					@media (max-width: var.$breakpointMobile2) {
 						width: 100%;
 						margin-right: 0;
 						margin-left: 0;
@@ -1038,19 +1041,4 @@ body {
 			padding-top: 15px;
 		}
 	}
-}
-// web
-@media (max-width: 1220px) {
-}
-@media (max-width: 1024px) {
-}
-// tablet
-@media (max-width: 960px) {
-}
-@media (max-width: 768px) {
-}
-// mobile
-@media (max-width: 600px) {
-}
-@media (max-width: 320px) {
 }
