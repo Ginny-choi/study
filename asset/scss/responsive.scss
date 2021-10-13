@@ -282,6 +282,10 @@ body {
 			&:hover {
 				box-shadow: 0 0 0 5px rgba(#f6e4f8, 0.9) inset, 0 0 0 100px rgba(#000, 0.1) inset;
 			}
+
+			&.open {
+				line-height: 50px;
+			}
 		}
 	}
 }

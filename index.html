@@ -220,9 +220,9 @@
 							<div class="blog1">
 								<h5 class="ir_su">image1</h5>
 								<figure>
-									<!-- <img src="/asset/img/blog1_@1.jpg" class="img-normal" alt="normal image" />
-									<img src="/asset/img/blog1_@2.jpg" class="img-retina" alt="retina image" /> -->
-									<img src="asset/img/blog2_@1.jpg" srcset="asset/img/blog3_@1.jpg 1x, asset/img/blog3_@2.jpg 2x, asset/img/blog3_@3.jpg 3x" alt="normal image" />
+									<img src="/asset/img/blog1_@1.jpg" class="img-normal" alt="normal image" />
+									<img src="/asset/img/blog1_@2.jpg" class="img-retina" alt="retina image" />
+									<!-- <img src="asset/img/blog2_@1.jpg" srcset="asset/img/blog3_@1.jpg 1x, asset/img/blog3_@2.jpg 2x, asset/img/blog3_@3.jpg 3x" alt="normal image" /> -->
 									<figcaption>반응형 웹 사이트 이미지 글입니다.반응형 웹 사이트 이미지 글입니다.반응형 웹 사이트 이미지 글입니다.반응형 웹 사이트 이미지 글입니다.</figcaption>
 								</figure>
 							</div>
@@ -379,11 +379,41 @@
 		<script src="/asset/js/jquery.min_1.12.4.js"></script>
 		<script src="/asset/js/modernizr-custom.js"></script>
 		<script src="/asset/js/lightgallery.min.js"></script>
+		<script src="/asset//js/lightgallery-all.min.js"></script>
 		<script src="/asset/js/slick.min.js"></script>
 
 		<script>
+			//메뉴 버튼
+			$(".btn").click(function (e) {
+				e.preventDefault;
+				$(".nav").slideToggle(300);
+				$(this).toggleClass("open");
+
+				if ($(".btn").hasClass("open")) {
+					//open 있을 때
+					$(".btn").find("i").attr("class", "fa fa-angle-up");
+				} else {
+					//open 없을 때
+					$(".btn").find("i").attr("class", "fa fa-angle-down");
+				}
+			});
+
+			$(window).resize(function () {
+				var winW = $(window).width();
+				if (winW < 600) {
+					$(".nav").removeAttr("style");
+					$(".btn").removeClass("open");
+					$(".btn").find("i").attr("class", "fa fa-angle-down");
+					// $(".nav").css("display", "none");
+				}
+			});
+
 			//라이트 박스
-			$(".lightbox").lightGallery({});
+			$(".lightbox").lightGallery({
+				autoplay: true,
+				pause: 3000,
+				progressBar: true,
+			});
 
 			//이미지 슬라이더
 			$(".slider").slick({
