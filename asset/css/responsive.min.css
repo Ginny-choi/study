@@ -14,7 +14,7 @@
 }
 
 body {
-  background: url(/asset/img/header_bg.jpg) repeat-x center top;
+  background: url(../img/header_bg.jpg) repeat-x center top;
 }
 
 #header .header {
